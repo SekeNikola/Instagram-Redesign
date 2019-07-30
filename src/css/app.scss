@@ -1,0 +1,166 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+.sidenav {
+    height: 100vh;
+    width: 15vw;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #F9F9F9;
+    overflow-x: hidden;
+    padding: 20px;
+
+    .brand {
+        display: flex;
+        align-items: end;
+
+        .logo {
+            margin-right: 10px;
+        }
+
+        span {
+            background: #000;
+            height: 20px;
+            width: 2px
+        }
+
+        .logo_name {
+            margin-left: 10px;
+        }
+    }
+
+    .profile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+
+        .profile-image {
+            position: relative;
+
+            img {
+                position: relative;
+                width: 115px;
+                height: 115px;
+                border-radius: 50%;
+                border: 2px solid #fff;
+            }
+
+            .story-border {
+                position: absolute;
+                top: -5px;
+                left: -5px;
+                content: "";
+                height: 130px;
+                width: 130px;
+                border-radius: 50%;
+                background: linear-gradient(50deg, #FFA068, #FF3EC5);
+            }
+        }
+
+        .profile-name {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            span {
+                margin-top: -20px;
+            }
+        }
+
+        .profile-follow {
+            display: flex;
+            flex-direction: row;
+            height: 50px;
+
+            .posts,
+            .follow,
+            .following {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-top: 20px;
+
+                span {
+                    margin-top: 20px;
+                    font-weight: 600
+                }
+
+                p {
+                    margin-top: -2px;
+                    opacity: .6;
+                }
+            }
+
+            .posts,
+            .follow {
+                padding-right: 10px;
+                margin-right: 10px;
+                border-right: 1px solid black;
+            }
+        }
+
+        .profile-desc {
+            text-align: center;
+        }
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+
+        & a:last-child {
+            margin-top: 20px;
+        }
+
+        a {
+            color: #707070;
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        img {
+            margin-right: 10px;
+        }
+    }
+}
+
+.main {
+    margin-left: 20vw;
+    /* Same as the width of the sidenav */
+    font-size: 28px;
+    /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+.active {
+    color: #F05161 !important
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
