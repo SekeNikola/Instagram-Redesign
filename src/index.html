@@ -59,7 +59,9 @@
       </div>
 
       <div class="menu">
-        <a href="#" class="active"><img src="./img/Feed.svg" alt="" /> Feed</a>
+        <a href="#" class="active"
+          ><img src="./img/feed_icon.svg" alt="" /> Feed</a
+        >
         <a href="#"><img src="./img/search_icon.svg" alt="" /> Explore</a>
         <a href="#"><img src="./img/direct_Icon.svg" alt="" /> Direct</a>
         <a href="#"><img src="./img/saved_icon.svg" alt="" /> Saved</a>
@@ -70,8 +72,29 @@
     </div>
 
     <div class="main">
-      <h2>Sidebar</h2>
-      <p>
+      <div id="topbar">
+        <div id="input_container">
+          <input type="text" id="input" placeholder="Search" />
+          <img src="./img/search_icon.svg" id="input_img" />
+        </div>
+        <div class="info_icons">
+          <a href="" id="notification-icon">
+            <img src="./img/notification_icon.png" alt="" />
+            <img src="./img/notifications.png" alt="" id="notifications" />
+          </a>
+          <a href="">
+            <img src="./img/add_story_icon.png" alt="" />
+          </a>
+          <a href="">
+            <img src="./img/add_photo_icon.png" alt="" />
+          </a>
+          <a href="">
+            <img src="./img/igtv_icon.png" alt="" />
+          </a>
+        </div>
+      </div>
+
+      <section class="story">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime beatae
         expedita nobis cupiditate earum, doloremque amet adipisci porro est,
         recusandae excepturi consectetur sit ipsa esse exercitationem saepe
@@ -95,7 +118,7 @@
         soluta quas, cumque eum voluptates numquam perferendis adipisci
         necessitatibus fugiat totam? Deleniti perferendis eos quaerat ipsum
         sint.
-      </p>
+      </section>
     </div>
   </body>
 </html>

@@ -1,16 +1,32 @@
-body {
+// GLOBAL SETTINGS
+* {
     margin: 0;
     padding: 0;
+}
+
+body {
     display: flex;
     font-family: 'Roboto', sans-serif;
-
+    color: #707070;
 }
 
 a {
     text-decoration: none;
 }
 
+// COLORS
+$lightgrey: #F9F9F9;
+$darkgey: #707070;
+$black: #000;
+$white: #fff;
+$orange: #FFA068;
+$pink: #FF3EC5;
+$active: #F05161;
 
+
+h2 {
+    font-size: 1.5em
+}
 
 .sidenav {
     height: 100vh;
@@ -19,9 +35,11 @@ a {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #F9F9F9;
+    background-color: $lightgrey;
     overflow-x: hidden;
     padding: 20px;
+
+    border-top-right-radius: 20px;
 
     .brand {
         display: flex;
@@ -32,7 +50,7 @@ a {
         }
 
         span {
-            background: #000;
+            background: $black;
             height: 20px;
             width: 2px
         }
@@ -47,17 +65,17 @@ a {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 40px;
+        margin-top: 10px;
 
         .profile-image {
             position: relative;
 
             img {
                 position: relative;
-                width: 115px;
-                height: 115px;
+                max-width: 100px;
+                height: 100px;
                 border-radius: 50%;
-                border: 2px solid #fff;
+                border: 2px solid $white;
             }
 
             .story-border {
@@ -65,10 +83,10 @@ a {
                 top: -5px;
                 left: -5px;
                 content: "";
-                height: 130px;
-                width: 130px;
+                height: 115px;
+                width: 115px;
                 border-radius: 50%;
-                background: linear-gradient(50deg, #FFA068, #FF3EC5);
+                background: linear-gradient(50deg, $orange, $pink);
             }
         }
 
@@ -77,10 +95,6 @@ a {
             flex-direction: column;
             justify-content: center;
             align-items: center;
-
-            span {
-                margin-top: -20px;
-            }
         }
 
         .profile-follow {
@@ -103,7 +117,6 @@ a {
                 }
 
                 p {
-                    margin-top: -2px;
                     opacity: .6;
                 }
             }
@@ -112,12 +125,14 @@ a {
             .follow {
                 padding-right: 10px;
                 margin-right: 10px;
-                border-right: 1px solid black;
+                border-right: 1px solid $black;
             }
         }
 
         .profile-desc {
+            font-size: 1em;
             text-align: center;
+            margin-top: 20px;
         }
     }
 
@@ -131,36 +146,115 @@ a {
         }
 
         a {
-            color: #707070;
-            font-size: 1.2rem;
+            color: $darkgey;
+            font-size: 1em;
             font-weight: 600;
             margin-bottom: 20px;
+            display: flex;
         }
 
         img {
-            margin-right: 10px;
+            margin-right: 20px;
         }
     }
 }
 
 .main {
     margin-left: 20vw;
-    /* Same as the width of the sidenav */
-    font-size: 28px;
-    /* Increased text to enable scrolling */
-    padding: 0px 10px;
+    padding: 15px 60px 0 0;
+
+    #topbar {
+        display: flex;
+        justify-content: space-between;
+
+        .info_icons {
+            img {
+                width: 20px;
+                margin-left: 20px;
+            }
+
+            #notification-icon {
+                position: relative;
+
+                #notifications {
+                    position: absolute;
+                    left: -22px;
+                    bottom: -30px;
+                    width: 4em;
+                }
+            }
+
+        }
+
+
+        #input_container {
+            position: relative;
+            display: block;
+            padding: 0 0 0 20px;
+            background: $lightgrey;
+            border-radius: 5px;
+            width: 80%;
+        }
+
+        #input {
+            height: 20px;
+            width: 90%;
+            margin: 0;
+            padding-right: 30px;
+            text-align: left;
+            text-indent: 5px;
+            background: $lightgrey;
+            border: none;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        #input_img {
+            position: absolute;
+            bottom: 5px;
+            left: 5px;
+            width: 15px;
+            height: 15px;
+        }
+    }
+
+    .story {
+        margin-top: 50px;
+    }
 }
+
 
 .active {
-    color: #F05161 !important
+    color: $active !important
 }
 
-@media screen and (max-height: 450px) {
+@media only screen and (min-width: 1600px) {
     .sidenav {
-        padding-top: 15px;
+        padding-top: 20px;
+
+        .profile {
+            margin-top: 40px;
+
+            .profile-desc {
+                margin-top: 40px !important;
+                padding: 0 15px;
+            }
+        }
+
+        h2 {
+            font-size: 1.8em
+        }
+
+        .menu {
+            margin: 40px 0 0 25px;
+
+            a {
+                font-size: 1.6em;
+            }
+        }
     }
 
-    .sidenav a {
-        font-size: 18px;
-    }
+
 }
