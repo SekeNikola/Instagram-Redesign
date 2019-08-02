@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Instagram redesign</title>
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.5/slick.min.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
       rel="stylesheet"
     />
@@ -62,12 +66,14 @@
         <a href="#" class="active"
           ><img src="./img/feed_icon.svg" alt="" /> Feed</a
         >
-        <a href="#"><img src="./img/search_icon.svg" alt="" /> Explore</a>
-        <a href="#"><img src="./img/direct_Icon.svg" alt="" /> Direct</a>
-        <a href="#"><img src="./img/saved_icon.svg" alt="" /> Saved</a>
-        <a href="#"><img src="./img/stats_icon.svg" alt="" /> Stats</a>
-        <a href="#"><img src="./img/settings_icon.svg" alt="" /> Settings</a>
-        <a href="#"><img src="./img/logout_icon.svg" alt="" /> Logout</a>
+        <a href="#"><img src="./img/search_icon.svg" alt="" />Explore</a>
+        <a href="#"
+          ><img src="./img/direct_Icon.svg" alt="" />Direct <span>3</span></a
+        >
+        <a href="#"><img src="./img/saved_icon.svg" alt="" />Saved</a>
+        <a href="#"><img src="./img/stats_icon.svg" alt="" />Stats</a>
+        <a href="#"><img src="./img/settings_icon.svg" alt="" />Settings</a>
+        <a href="#"><img src="./img/logout_icon.svg" alt="" />Logout</a>
       </div>
     </div>
 
@@ -79,45 +85,156 @@
         </div>
         <div class="info_icons">
           <a href="" id="notification-icon">
-            <img src="./img/notification_icon.png" alt="" />
-            <img src="./img/notifications.png" alt="" id="notifications" />
+            <img src="./img/notification_icon.svg" alt="" />
+            <img src="./img/notifications.svg" alt="" id="notifications" />
           </a>
           <a href="">
-            <img src="./img/add_story_icon.png" alt="" />
+            <img src="./img/add_story_icon.svg" alt="" />
           </a>
           <a href="">
-            <img src="./img/add_photo_icon.png" alt="" />
+            <img src="./img/add_photo_icon.svg" alt="" />
           </a>
           <a href="">
-            <img src="./img/igtv_icon.png" alt="" />
+            <img src="./img/igtv_icon.svg" alt="" />
           </a>
         </div>
       </div>
 
-      <section class="story">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime beatae
-        expedita nobis cupiditate earum, doloremque amet adipisci porro est,
-        recusandae excepturi consectetur sit ipsa esse exercitationem saepe
-        soluta laboriosam? Unde amet cupiditate, voluptates earum accusantium
-        sunt sed perferendis explicabo numquam, ab repellendus, adipisci ipsum
-        fugit nesciunt rerum laudantium corrupti. Dolorum quibusdam autem ipsum
-        sed tempore nisi deleniti recusandae temporibus labore! Deserunt,
-        blanditiis. Natus sequi non accusantium vero excepturi fugiat voluptas
-        obcaecati ab illo iusto, quaerat recusandae veritatis reiciendis
-        provident nihil cum? Dignissimos vero rerum placeat laudantium quae
-        illo, error esse nobis. Porro, harum. Optio similique ex distinctio
-        quaerat, nulla repellat officiis nostrum voluptas saepe doloremque iste
-        mollitia illum a cupiditate sit corporis vel, placeat dicta repudiandae
-        recusandae natus! Eius rem tempore incidunt consequatur error.
-        Doloremque tempora provident vero illo consectetur saepe in velit dicta
-        ipsam animi. Corporis autem illo nihil maiores delectus voluptates vero
-        natus, iusto aspernatur ea eius molestias quae aut rerum iure tenetur
-        architecto veritatis id laboriosam optio atque. Iure dolorum numquam
-        error dolor quis, nostrum illum, alias sequi, voluptatum nobis dicta
-        maxime. Illum officia aperiam et. Vel praesentium reprehenderit non
-        soluta quas, cumque eum voluptates numquam perferendis adipisci
-        necessitatibus fugiat totam? Deleniti perferendis eos quaerat ipsum
-        sint.
+      <section id="story">
+        <h2>Stories</h2>
+        <div class="story-images">
+          <div class="story-img">
+            <img src="./img/story/story1.jpg" alt="" />
+            <img src="./img/story/user1.png" alt="" class="story-img-user" />
+          </div>
+          <div class="story-img">
+            <img src="./img/story/story2.jpg" alt="" />
+            <img src="./img/story/user2.png" alt="" class="story-img-user" />
+          </div>
+          <div class="story-img">
+            <img src="./img/story/story3.jpg" alt="" />
+            <img src="./img/story/user3.png" alt="" class="story-img-user" />
+          </div>
+          <div class="story-img">
+            <img src="./img/story/story4.jpg" alt="" />
+            <img src="./img/story/user4.png" alt="" class="story-img-user" />
+          </div>
+          <div class="story-img">
+            <img src="./img/story/story5.jpg" alt="" />
+            <img src="./img/story/user5.png" alt="" class="story-img-user" />
+          </div>
+          <div class="story-img">
+            <img src="./img/story/story6.jpg" alt="" />
+            <img src="./img/story/user6.png" alt="" class="story-img-user" />
+          </div>
+          <div class="story-img">
+            <img src="./img/story/story7.jpg" alt="" />
+            <img src="./img/story/user7.png" alt="" class="story-img-user" />
+          </div>
+          <div class="story-img">
+            <img src="./img/story/story1.jpg" alt="" />
+            <img src="./img/story/user1.png" alt="" class="story-img-user" />
+          </div>
+          <div class="story-img">
+            <img src="./img/story/story5.jpg" alt="" />
+            <img src="./img/story/user1.png" alt="" class="story-img-user" />
+          </div>
+        </div>
+      </section>
+
+      <section id="feed">
+        <h2>Latest Feed</h2>
+        <div class="feed-select">
+          <span id="latest">Latest</span>
+          <span id="popular">Popular</span>
+        </div>
+        <div class="feed-images">
+          <div class="feed-image-block">
+            <img src="./img/feed/photo1.jpg" alt="" class="feed-image" />
+            <div class="shadow"></div>
+            <div class="feed-image-info">
+              <span class="feed-image-info-left"
+                ><img src="./img/feed/profile1.jpg" alt="" />
+                <p>John Doe</p>
+              </span>
+              <div class="info-icons">
+                <span><img src="./img/notification_icon.svg" alt="" />13K</span>
+                <span><img src="./img/feed/comment-icon.svg" alt="" />3K</span>
+                <span><img src="./img/feed/saved-icon.svg" alt=""/></span>
+              </div>
+            </div>
+          </div>
+          <div class="feed-image-block">
+            <img src="./img/feed/photo2.jpg" alt="" class="feed-image" />
+            <div class="feed-image-info">
+              <span class="feed-image-info-left"
+                ><img src="./img/feed/profile2.jpg" alt="" />
+                <p>John Doe</p>
+              </span>
+              <div class="info-icons">
+                <span><img src="./img/feed/liked-icon.svg" alt="" />13K</span>
+                <span><img src="./img/feed/comment-icon.svg" alt="" />3K</span>
+                <span><img src="./img/feed/saved-icon.svg" alt=""/></span>
+              </div>
+            </div>
+          </div>
+          <div class="feed-image-block">
+            <img src="./img/feed/photo3.jpg" alt="" class="feed-image" />
+            <div class="feed-image-info">
+              <span class="feed-image-info-left"
+                ><img src="./img/feed/profile3.jpg" alt="" />
+                <p>John Doe</p>
+              </span>
+              <div class="info-icons">
+                <span><img src="./img/notification_icon.svg" alt="" />13K</span>
+                <span><img src="./img/feed/comment-icon.svg" alt="" />3K</span>
+                <span><img src="./img/feed/saved-icon.svg" alt=""/></span>
+              </div>
+            </div>
+          </div>
+          <div class="feed-image-block">
+            <img src="./img/feed/photo4.jpg" alt="" class="feed-image" />
+            <div class="feed-image-info">
+              <span class="feed-image-info-left"
+                ><img src="./img/feed/profile4.jpg" alt="" />
+                <p>John Doe</p>
+              </span>
+              <div class="info-icons">
+                <span><img src="./img/notification_icon.svg" alt="" />13K</span>
+                <span><img src="./img/feed/comment-icon.svg" alt="" />3K</span>
+                <span><img src="./img/feed/saved-icon.svg" alt=""/></span>
+              </div>
+            </div>
+          </div>
+          <div class="feed-image-block">
+            <img src="./img/feed/photo5.jpg" alt="" class="feed-image" />
+            <div class="feed-image-info">
+              <span class="feed-image-info-left"
+                ><img src="./img/feed/profile5.jpg" alt="" />
+                <p>John Doe</p>
+              </span>
+              <div class="info-icons">
+                <span><img src="./img/notification_icon.svg" alt="" />13K</span>
+                <span><img src="./img/feed/comment-icon.svg" alt="" />3K</span>
+                <span><img src="./img/feed/saved-icon.svg" alt=""/></span>
+              </div>
+            </div>
+          </div>
+          <div class="feed-image-block">
+            <img src="./img/feed/photo6.jpg" alt="" class="feed-image" />
+            <div class="feed-image-info">
+              <span class="feed-image-info-left"
+                ><img src="./img/feed/profile6.jpg" alt="" />
+                <p>John Doe</p>
+              </span>
+              <div class="info-icons">
+                <span><img src="./img/notification_icon.svg" alt="" />13K</span>
+                <span><img src="./img/feed/comment-icon.svg" alt="" />3K</span>
+                <span><img src="./img/feed/saved-icon.svg" alt=""/></span>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
   </body>
